@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicoes do Fundo</title>
+    <style>
+        div.bloco {
+            background-image: url(imagens/wallpaper002.jpg); /*imagem de fundo */ 
+            height: 200px; /*altura */
+            border: 1px solid black; /*tamanho, estilo e cor */
+            border-radius: 20px; /*arredonda as pontas */
+            margin: 10px; /*caixa fora */
+        }
+        div#q1 {
+            background-position: left top;
+        }
+        div#q2 {
+            background-position: left center;
+        }
+        div#q3 {
+            background-position: right bottom;
+        }
+        div#q4 {
+            background-position: center center;
+        }
+
+        /*obs sobre background-position:
+        
+        1 2 3 
+        4 5 6
+        7 8 9
+        
+        left top = 1
+        
+        left center = 4
+        
+        right bottom = 9
+        
+        center center = 5
+        */
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+        
+    </div>
+    <div class="bloco" id="q3">
+        
+    </div>
+    <div class="bloco" id="q4">
+        
+    </div>
+</body>
+</html>
