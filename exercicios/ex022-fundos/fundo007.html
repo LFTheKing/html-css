@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png); /*imagem de fundo */
+            background-size: 100% 100%; /*significa cobrir, mas ele vai dar uma leve cortada na parte lateral, cima e baixo */
+            position: relative;
+            height: 96vh; /*altura da v porte, ou seja, a imagem vai ficar no centro da parte branca */
+            padding: 10px; /*caixa interior */
+            background-color: purple; /*cor de fundo */
+        }
+        #conteudo {
+            background-image: url(imagens/target001.png); /*imagem de fundo */
+            background-size: 100% 100%; /*significa cobrir, mas ele vai dar uma leve cortada na parte lateral, cima e baixo */
+            position: absolute;
+            height: 200px; /*altura */
+            width: 400px; /*largura */
+            background-color: yellow; /*cor de fundo */
+
+            /*so consegue usar: left e top, por causa do position: absolute */
+            left: 50%; /*baixo */
+            top: 50%; /*cima */
+
+            transform: translate(-50% -50%);
+            /*ele transforma o ponto de referencia na imagem o ponto de referencia é a ponta esquerda cima para deixar como ponto de referencia a parte central da imagem é utilizado o "transform: translate"
+            
+            -50% quando negativo na primeira opcao = se movimenta pra direira
+            
+            50% quando positivo na primeira opcao = se movimenta pra esquerda
+            
+            -50% quando negativo na segunda opcao = se movimenta pra baixo
+            
+            50% quando positivo na segunda opcao = se movimenta pra cima
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

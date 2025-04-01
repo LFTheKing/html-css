@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh; /*altura da v porte, ou seja, a imagem vai ficar no centro da parte branca */
-            background-color: black; /*cor de fundo */
-            background-image: url(imagens/wallpaper002.jpg); /*imagem do fundo */
-            background-position: center center; /*posicao da imagem de fundo */
-            background-repeat: no-repeat; /*nao repeti a imagem de fundo */
-            background-size: cover; /*
             
-            opcao 01:
-            100% 100% = 100% de largura e 100% de altura, mas a imagem fica esticada
+            /*
+            
+            background-color: black; /cor de fundo/
+            background-image: url(imagens/wallpaper002.jpg); /imagem do fundo/
+            background-position: center center; /posicao da imagem de fundo/
+            background-repeat: no-repeat; /nao repeti a imagem de fundo/
+            background-size: cover; /significa cobrir, mas ele vai dar uma leve cortada na parte lateral, cima e baixo/
+            background-attachment: fixed; /para o fundo ficar fixo/
 
-            opcao 02:
-            contain = significa que a imagem do fundo sera exibida 100%, mas sem corte 
-            
-            opcao 03: MELHOR OPCAO
-            cover = significa cobrir, mas ele vai dar uma leve cortada na parte lateral, cima e baixo
             */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            /*Shorthand background
+                background-color > background-image > background-position > background-repeat > [background-size] > background-attachment 
+
+                ou seja, quando for usar colocar nessa ordem sendo o 1º background-color e o ultimo background-attachment
+
+                OBS: era pra funcionar o BACKGROUND-SIZE mas os navegadores nao estao funcionando de acordo com o gustavo-guanabara pd ser que futuramente funcione
+            */
+            background-size: cover; /*significa cobrir, mas ele vai dar uma leve cortada na parte lateral, cima e baixo */
         }
         main {
             background-color: white; /*cor de fundo */
-            width: 400px; /*largura */
+            max-width: 400px; /*largura-maxima: ele trava o main em 400px ou seja se aumentar ou diminuir vai continuar sendo do mesmo tamanho */
             padding: 10px; /*caixa interna */
             margin: auto; /*centraliza */
             border: 1px solid darkblue; /*tamanho, estilo e cor */

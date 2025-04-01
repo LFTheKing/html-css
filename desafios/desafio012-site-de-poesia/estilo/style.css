@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*=== GERAL ===*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*=== TEXTO ===*/
+html, body {
+    min-height: 100vh; /*tamanho minimo do corpo / vh significa: altura da v porte, ou seja, a imagem vai ficar no centro da parte branca */
+    background-color: darkgrey; /*cor de fundo */
+}
+/*=== TITULO ===*/
+header {
+    background-color: black; /*cor de fundo */
+    color: white; /*cor da letra */
+    text-align: center; /*centraliza o texto */
+}
+header > h1 {
+    padding: 50px; /*caixa interior */
+    /* text-transform: uppercase; /*coloca o texto em letra maiuscula */
+    font-variant: small-caps; /*letra maiuscula mas as iniciais da palavra sao maiores do q o restante da palavra */
+}
+header > p {
+    padding-bottom: 50px; /*caixa interior para baixo */
+
+}
+header a, footer a {
+    color: white; /*cor da letra */
+    text-decoration: none; /*sublinhado */
+    font-weight: bolder; /*negrito */
+}
+header a:hover, footer a:hover { /*interacao do mouse */
+    text-decoration: underline; /*sublinhado */
+}
+/*=== Corpo-do-texto === */
+section {
+    padding-top: 10vh; /*caixa interior cima */
+    padding-bottom: 10vh; /*caixa interior baixo */
+    line-height: 2em; /*espaçamento entre as letras */
+    padding-left: 30px; /*caixa interior esquerdo */
+}
+section.normal {
+    background-color: white; /*cor de fundo */
+    color: black; /*cor da letra */
+}
+section.imagem {
+    background-color: rgb(98, 96, 96); /*cor de fundo */
+    color: white; /*cor da letra */
+}
+section.imagem > p {
+    width: 400px; /*largura */
+    background-color: rgba(0, 0, 0, 0.423); /*cor de fundo */
+}
+/*=== Roda-pe ===*/
+footer {
+    background-color: black; /*cor de fundo */
+    color: white; /*cor da letra */
+    text-align: center; /*centraliza o texto */
+    padding: 10px; /*caixa interior */
+}
