@@ -57,6 +57,9 @@ section {
     font-family: var(--font3); /*fonte da letra, var é a fonte importada */
     font-size: 3.5vw;/*tamanho da fonte, "vw" largura da tela */
 }
+section > p {
+    padding-bottom: 2em; /*caixa interior */
+}
 section.normal {
     background-color: white; /*cor de fundo */
     color: black; /*cor da letra */
