@@ -67,11 +67,22 @@ section.normal {
 section.imagem {
     background-color: rgb(98, 96, 96); /*cor de fundo */
     color: white; /*cor da letra */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404); /*sombra "inset = para dentro" */
+    background-size: cover; /*imagem fica inteira independente do tamanho do navegador */
+    background-attachment: fixed; /*EFEITO PARALLAX = fixa a imagem no fundo com um efeito na movimentacao */
 }
 section.imagem > p {
     display: inline-block; /*ela se adapta ao texto ou seja ela vai aparecer ate onde o texto termina */
     padding: 5px; /*caixa interior */
-    background-color: rgba(0, 0, 0, 0.423); /*cor de fundo */
+    background-color: rgba(0, 0, 0, 0.514); /*cor de fundo */
+    text-shadow: 1px 1px 0px black; /*sombra no texto */
+}
+section#img01 {
+    background-image: url(../imagens/background001.jpg); /*imagem de fundo */
+    background-position: right center; /*posicao da imagem */
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg); /*imagem de fundo */ 
 }
 /*=== Roda-pe ===*/
 footer {
