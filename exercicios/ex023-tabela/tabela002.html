@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /*Estilo da letra */
+        }
+        table {
+            width: 400px; /*largura */
+            height: 400px; /*altura */
+            border-collapse: collapse;/*separate= para a borda ficar seperada e collapse= para a borda ficar grudada */
+        }
+        td {
+            border: 1px solid black; /*borda: tamanho, estilo e cor */
+            padding: 8px; /*caixa interior */
+            text-align: center; /*centraliza o texto */
+            vertical-align: top; /*esse codigo serve para orgarnizar a posicao do texto por exemplo:
+            X X X
+            O O O
+            C C C 
+            Todos q estao em "X" significa que da para colocar no codigo usando:
+            TOP = X = TOPO
+            MIDDLE = O = MEIO
+            BOTTOM = C = BAIXO
+
+            RIGHT = DIREITA
+            LEFT = ESQUERDA
+            ; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- 
+        Hierarquia de tabelas (Simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçario de tabela
+                TABLE DATA = dado da tabela
+
+                Exemplo de como é para ficar:
+                A1 B1 C1
+                A2 B2 C2
+                A3 B3 C3
+                A4 B4 C4
+    -->
+    <table> <!-- TABLE = tabela -->
+        <tr> <!-- TABLE ROW = linha de tabela --> <!-- Primeira linha -->
+            <td>A1</td> <!-- TABLE DATA = dado da tabela -->
+            <td>B1</td> <!-- TABLE DATA = dado da tabela -->
+            <td>C1</td> <!-- TABLE DATA = dado da tabela -->
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td>A2</td> 
+            <td>B2</td> 
+            <td>C2</td> 
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td> 
+            <td>B3</td> 
+            <td>C3</td> 
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4 <!-- Pode ser colocado apenas a primeira tag -->
+            <td>B4
+            <td>C4 
+        </tr>
+    </table>
+</body>
+</html>
