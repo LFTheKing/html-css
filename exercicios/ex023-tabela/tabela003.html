@@ -11,6 +11,7 @@
         table {
             width: 500px; /* largura */
             border-collapse: collapse; /* colar a borda uma na outra */
+            position: relative; /* posicao comportamental "ele n explicou muito bem" */
         }
         td, th {
             border: 1px solid black; /* tamanho da borda, estilo e cor */
@@ -26,6 +27,11 @@
         thead, tfoot {
             background-color: grey; /* cor do fundo */
             color: white; /* cor da letra */
+        }
+        thead > tr > th { /* CONFIGURACAO PARA COLAR O TITULO ACIMA NO QUAL QUANDO FOR PARA BAIXO ELE MANTEM VISIVEL */
+            position: sticky; /* posicao, sticky = colado */
+            top: -1px; /* topo */
+            background-color: grey;
         }
         tbody tr:nth-child(odd) { /* BOM EM RESUMO É ASSIM QUE FAZ O EFEITO ZEBRADO */
         /* Para colocar o efeito zebrado
@@ -120,6 +126,31 @@
                 <td>Maranhão</td>
                 <td class="num">7 010 960</td>
             </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 145 040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 836 399</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 375 646</td>
+            </tr>
         </tbody>
         <tfoot> <!-- RODAPÉ -->
                 <tr>
@@ -128,5 +159,14 @@
                 </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium consequatur repellendus ratione. Porro mollitia earum aut optio officiis, amet voluptates dolor dolores repellendus quisquam iste ipsum! Aspernatur, quasi ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum vitae, possimus pariatur saepe, doloribus inventore itaque voluptate id eum, ipsam rerum officia enim dignissimos maxime nisi facilis ex fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus minus amet nostrum eligendi laudantium iusto quia voluptas reiciendis, aspernatur sed veritatis odit consectetur cupiditate expedita alias quas in dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eligendi nulla aperiam tenetur, facilis soluta quam, eveniet expedita minus explicabo officiis cupiditate maxime id iste. Nesciunt vel est tempora in.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium consequatur repellendus ratione. Porro mollitia earum aut optio officiis, amet voluptates dolor dolores repellendus quisquam iste ipsum! Aspernatur, quasi ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum vitae, possimus pariatur saepe, doloribus inventore itaque voluptate id eum, ipsam rerum officia enim dignissimos maxime nisi facilis ex fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus minus amet nostrum eligendi laudantium iusto quia voluptas reiciendis, aspernatur sed veritatis odit consectetur cupiditate expedita alias quas in dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eligendi nulla aperiam tenetur, facilis soluta quam, eveniet expedita minus explicabo officiis cupiditate maxime id iste. Nesciunt vel est tempora in.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium consequatur repellendus ratione. Porro mollitia earum aut optio officiis, amet voluptates dolor dolores repellendus quisquam iste ipsum! Aspernatur, quasi ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum vitae, possimus pariatur saepe, doloribus inventore itaque voluptate id eum, ipsam rerum officia enim dignissimos maxime nisi facilis ex fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus minus amet nostrum eligendi laudantium iusto quia voluptas reiciendis, aspernatur sed veritatis odit consectetur cupiditate expedita alias quas in dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eligendi nulla aperiam tenetur, facilis soluta quam, eveniet expedita minus explicabo officiis cupiditate maxime id iste. Nesciunt vel est tempora in.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium consequatur repellendus ratione. Porro mollitia earum aut optio officiis, amet voluptates dolor dolores repellendus quisquam iste ipsum! Aspernatur, quasi ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum vitae, possimus pariatur saepe, doloribus inventore itaque voluptate id eum, ipsam rerum officia enim dignissimos maxime nisi facilis ex fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus minus amet nostrum eligendi laudantium iusto quia voluptas reiciendis, aspernatur sed veritatis odit consectetur cupiditate expedita alias quas in dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eligendi nulla aperiam tenetur, facilis soluta quam, eveniet expedita minus explicabo officiis cupiditate maxime id iste. Nesciunt vel est tempora in.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium consequatur repellendus ratione. Porro mollitia earum aut optio officiis, amet voluptates dolor dolores repellendus quisquam iste ipsum! Aspernatur, quasi ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum vitae, possimus pariatur saepe, doloribus inventore itaque voluptate id eum, ipsam rerum officia enim dignissimos maxime nisi facilis ex fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus minus amet nostrum eligendi laudantium iusto quia voluptas reiciendis, aspernatur sed veritatis odit consectetur cupiditate expedita alias quas in dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eligendi nulla aperiam tenetur, facilis soluta quam, eveniet expedita minus explicabo officiis cupiditate maxime id iste. Nesciunt vel est tempora in.</p>
 </body>
 </html>
