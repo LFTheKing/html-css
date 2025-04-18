@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Completa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* fonte da letra */
+        }
+        table {
+            border-collapse: collapse; /* juntar as bordas */
+            width: 300px;
+        }
+        caption {
+            font-size: 1.3em; /* tamanho da letra */
+            font-weight: bold; /* negrito */
+            padding: 10px; /* caixa interior */
+        }
+        th, td {
+            border: 1px solid black; /* tamanho, estilo e cor da borda */
+            padding: 10px; /* caixa interior */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead> <!-- Titulo -->
+            <tr>
+                <th scope="col">Grupo</th> <!-- 
+                scope="" obs toda vez que tiver TH tem que colocar scope. Pois serve para identificar onde estão os dados dele pq th é um titulo. 
+                exemplo: 
+                
+                col = significa q os dados deles esta para baixo ou seja COLUNA
+                
+                rol = significa q os dados deles esta ao lado ou seja LINHA
+                -->
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th> 
+                <!--
+                quando o scope é um colgroup ou rowgroup signiifica que a mais de uma coluna ou linha para o titulo.
+                exemplo:
+                cada pessoa a 3 filmes se eu colocar col em vez de colgroup siginifica que o titulo "th" é somente os primeiro filme de cada pessoa por isso é usado group
+                -->
+            </tr>
+        </thead>
+        <tbody> <!-- Corpo-do-Texto -->
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td >Ana Maria</td>
+                <td>Rambo</td>
+                <td>Mercenarios</td>
+                <td>Rocky Balboa</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Batman 1966</td>
+                <td>Super 1978</td>
+                <td>Batman vs Superman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Matrix</td>
+                <td>Senhor dos Aneis</td>
+                <td>Hobbit</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Exterminador do Futuro</td>
+                <td>De volta para o Futuro</td>
+                <td>Robocopi</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Braveheart</td>
+                <td>Homem Demolidor</td>
+                <td>A vida é Bela</td>
+            </tr>
+            <tr>
+                <td>Fabiano</td>
+                <td>ET.</td>
+                <td>Os Sete Samurais</td>
+                <td>O magico de Oz</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
