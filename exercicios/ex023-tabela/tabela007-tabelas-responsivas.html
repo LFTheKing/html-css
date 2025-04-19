@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* fonte do texto */
+        }
+        table {
+            width: 500px; /* largura */
+            border-collapse: collapse; /* colar a borda uma na outra */
+            position: relative; /* posicao comportamental "ele n explicou muito bem" */
+        }
+        td, th {
+            border: 1px solid black; /* tamanho da borda, estilo e cor */
+            padding: 10px; /* caixa interior */
+        }
+        caption {
+            font-size: 1.5em;/* tamanho da letra */
+            font-weight: bold; /* negrito */
+            padding: 10px; /* caixa interior */
+            background-color: lightgray; /* cor de fundo */
+
+        }
+        thead, tfoot {
+            background-color: grey; /* cor do fundo */
+            color: white; /* cor da letra */
+        }
+        thead > tr > th { /* TITULO FIXO */
+            position: sticky; /* posicao, sticky = colado */
+            top: -1px; /* topo */
+            background-color: grey;
+        }
+        tbody tr:nth-child(odd) { /* EFEITO ZEBRADO */
+            background-color: lightgray;/* cor de fundo */
+        }
+        td.num {
+            text-align: right;
+        }
+        div#container { /* CONFIGURACAO PARA TABELAS RESPONSIVAS */
+            overflow-x: auto; /* para que serve esse codigo: serve para quando tiver no celular habilitar a rolagem somente para a tabela o restante em volta nao vai se mover SOMENTE A TABELA*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <div id="container">
+        <table>
+            <caption>População das unidades Federativas</caption>
+            <thead> <!--CABEÇA -->
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">Populaçao</th>
+                </tr>
+            </thead>
+            <tbody> <!-- CORPO -->
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 849</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 850 513</td>
+                </tr>
+                <tr>
+                    <td>Parana</td>
+                    <td class="num">11 821 665</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 229 915</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 539 029</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 233 656</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 664 306</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">8 058 441</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 350 483</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 010 960</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 281 209</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">4 145 040</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 102 129</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 836 399</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 446 071</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 375 646</td>
+                </tr>
+            </tbody>
+            <tfoot> <!-- RODAPÉ -->
+                    <tr>
+                        <th scope="row">Total de habitantes</th>
+                        <td class="num"><strong>143 147 125</strong></td>
+                    </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quaerat consectetur ipsum temporibus, deserunt ullam nisi sunt perferendis saepe minus doloremque laudantium distinctio sit, nemo at non quos voluptas rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea illo iste consequuntur. Facere, blanditiis cumque porro esse accusamus similique. Laudantium architecto earum repellat! Deserunt minima earum ab quae ut nihil?</p>
+</body>
+</html>

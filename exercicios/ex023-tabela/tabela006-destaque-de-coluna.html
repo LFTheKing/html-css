@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* fonte da letra */
+        }
+        table {
+            width: 500px; /* largura */
+            border-collapse: collapse; /* juntar borda */
+        }
+        caption {
+            font-size: 1.3em; /* tamanho da letra */
+            font-weight: bolder; /* negrito */
+            padding: 8px; /* caixa interior */
+        }
+        th, td {
+            border: 1px solid black; /* tamanho, estilo e cor */
+            padding: 8px; /* caixa interior */
+        }
+        col#cnome {
+            background-color: green; /* cor de fundo */
+        }
+        col#csexo {
+            background-color: red; /* cor de fundo */
+        }
+        col#cgroup {
+            background-color: purple; /* cor de fundo */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercio de Tabela</h1>
+    <table>
+        <colgroup> <!-- tag para colunas -->
+            <col id="cnome"> <!-- coluna 1 -->
+            <col id="csexo"> <!-- coluna 2 -->
+            <col id="cgroup" span="2"> <!-- coluna 3 porem eu coloque span entao ele vai ser coluna 3 + coluna 4 -->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+    </table>
+</body>
+</html>
